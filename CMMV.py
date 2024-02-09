@@ -10,6 +10,7 @@ p8=np.array([float(3),float(3)])
 p9=np.array([float(4),float(4)])
 ang=30
 
+
 def distance(p1,p2):
     e=0
     res=[]
@@ -37,13 +38,21 @@ def unit_vector():
     x=1
 
 ###############
-def vector_product(v1,v2,ang):
+
+def vector_product(v1,v2):
     #print(v1,v2,ang)
-    r=v1*v2*np.sin(ang*np.pi/180)
+    print(v1)
+    r=1
+    print(r)
+    return(r) 
+    
+def unknown_function(v1,v2,ang):
+    #print(v1,v2,ang)
+    r=vector_modulus(v1)*vector_modulus(v2)*np.sin(ang*np.pi/180)
     print(r)
     return(r) 
 
-print(np.sin(np.pi))
-#vector_product(vector_modulus(vector(p1 ,p2)),vector_modulus(vector(p1,p2)),30)
+#print(np.sin(ang*np.pi/180))
+#vector_product((vector(p1 ,p2)),(vector(p1,p2)))
 
 #print(np.sin(90*np.pi*1/180))
